@@ -1,0 +1,100 @@
+@import "../main";
+
+.splash-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+
+  @media screen and (min-width: $medium) {
+    font-size: 18px;
+  }
+}
+
+.splash {
+  h1 {
+    font-size: 3em;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    margin: 0;
+    animation: fadeInDown .5s ease-in;
+  }
+
+  p {
+    opacity: 0;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.25;
+    max-width: 30em;
+    letter-spacing: -.03em;
+    color: #9b9b9b;
+    animation: fadeInDown .35s ease-in .7s forwards;
+  }
+}
+
+.fancy {
+  color: $primary;
+}
+
+.handle {
+  opacity: 0;
+  display: inline-block;
+  margin-top: .275em;
+  color: #9b9b9b;
+  letter-spacing: .5px;
+  animation: fadeInDown .35s ease-in .35s forwards;
+}
+
+.writing {
+  text-decoration: none;
+  color: $primary;
+}
+
+/* overrides */
+
+main {
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 0 1.5rem;
+
+  p{
+    margin-top: -6rem;
+    color: #9b9b9b;
+    font-size: .65rem;
+  }
+
+  @media screen and (min-width: 400px){
+    p {
+        margin-top: -2rem;
+    }
+  }
+}
+
+
+
+.social-icons {
+  justify-content: flex-start;
+  padding-top: 1rem;
+  margin-left: -0.8rem;  // offset to negate icon's padding to align with text above
+
+}
+
+/* animations */
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
