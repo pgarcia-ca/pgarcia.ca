@@ -7,14 +7,14 @@ theme = ["hugo-theme-codex-patch", "hugo-theme-codex"]
 # Override these settings with your own
 title = "Philip Garcia"
 languageCode = "en-us"
-baseURL = ""
+baseURL = "https://pgarcia.ca"
 copyright = "© 2020 Philip Garcia"
 
 # Add your Disqus shortname here.
 # disqusShortname = ""
 
 # Add your Google Analytics identifier: UA-XXXXXXXX-X
-# googleAnalytics = "" 
+googleAnalytics = "UA-180626425-1" 
 
 # Optional params
 [params]
